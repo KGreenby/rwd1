@@ -1,92 +1,551 @@
+
 <!DOCTYPE html>
+
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <meta name="viewport" content="width=device-width">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>NICE TO CU</title>
+        <meta name="description" content="24시간 편의점, 편의점 프랜차이즈, 편의점택배, 택배, 상품안내, 가맹 시스템, 창업 상담 제공">
+        <meta name="author" content="BGF Retail, BGF 리테일, 비지에프 리테일j, CVS for You, CU, Wylie">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="stylesheet" href="common.css">
+    </head>
+    <body>
+        <!--h1 : 로고로 대체해야 함
+                div: 로그인/점주인증/점주광장
+                nav:first - 네비게이션
+            -->
+        <header id="header">
+          <h1>Nice to CU</h1>
+            <div class="header_util">
+                <h2 class="hidden_title">멤버십관련</h2>
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">점주인증</a></li>
+                    <li><a href="#">점주광장</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="header_nav">
 
-    <style>
-        * { box-sizing: border-box; }
-        body, h1, h2, ul { margin: 0; padding: 0; }
-        ul li { list-style: none; }
-        ul li a { text-decoration: none; color: black; }
+                <nav id="gnb">
+                    <h2 class="hidden_title">주요메뉴</h2>
+                    <ul>
+                        <li><a href="#">CU 소개</a>
+                            <ul>
+                                <li><a href="#">브랜드 스토리</a></li>
+                                <li><a href="#">디지털 사보</a></li>
+                                <li><a href="#">CU 갤러리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">상품*서비스</a>
+                            <ul>
+                                <li><a href="#">전체상품</a></li>
+                                <li><a href="#">CU 차별화 상품</a></li>
+                                <li><a href="#">행사 상품</a></li>
+                                <li><a href="#">생활편의 서비스</a></li>
+                                <li><a href="#">제휴카드</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">매장안내</a></li>
+                        <li><a href="#">멤버십</a>
+                            <ul>
+                                <li><a href="#">멤버십 소개</a></li>
+                                <li><a href="#">포켓 CU</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">창업*상생</a>
+                            <ul>
+                                <li><a href="#">사업의 이해</a></li>
+                                <li><a href="#">가맹조건</a></li>
+                                <li><a href="#">창업 설명회</a></li>
+                                <li><a href="#">창업 성공기</a></li>
+                                <li><a href="#">점포물건</a></li>
+                                <li><a href="#">상생혜택</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">입점상담</a>
+                            <ul>
+                                <li><a href="#">입점 프로세스</a></li>
+                                <li><a href="#">기준 안내</a></li>
+                                <li><a href="#">입점 상담 신청</a></li>
+                                <li><a href="#">동반 성장</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">새로운소식</a>
+                            <ul>
+                                <li><a href="#">CU소식</a></li>
+                                <li><a href="#">이거어때</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <hr>
+            </div>
+            <div class="header_etc">
+                <div class="header_lang">
+                    <select>
+                        <option value="KR" selected>KR</option>
+                        <option value="EN">EN</option>
+                        <option value="CH">CH</option>
+                    </select>
+                </div>
+                <a href="#">toggle</a>
 
+            </div>
+        </header>
 
-        header { 
-            width: 100%; height: 100px; 
-            background: #00f7ff;
+        <section id="sitemap">
+          <h2 class="hidden_title">사이트맵</h2>
+          <nav>
+              <ul>
+                  <li><a href="#">CU소개</a></li>
+                      <ul>
+                          <li><a href="#">브랜드 스토리</a></li>
+                          <li><a href="#">디지털 사보</a></li>
+                          <li><a href="#">CU 갤러리</a></li>
+                      </ul>
+                  <li><a href="#">상품·서비스</a></li>
+                      <ul>
+                          <li><a href="#">전체 상품</a></li>
+                          <li><a href="#">CU 차별화 상품</a></li>
+                          <li><a href="#">행사상품</a></li>
+                          <li><a href="#">생활편의 서비스</a></li>
+                          <li><a href="#">제휴카드</a></li>
+                      </ul>
+                  <li><a href="#">매장안내</a></li>
+                  <li><a href="#">멤버십</a></li>
+                      <ul>
+                          <li><a href="#">멤버십 소개</a></li>
+                          <li><a href="#">포켓CU</a></li>
+                      </ul>
+                  <li><a href="#">창업·창생</a></li>
+                      <ul>
+                          <li><a href="#">사업의 이해</a></li>
+                          <li><a href="#">가맹조건</a></li>
+                          <li><a href="#">창업 설명회</a></li>
+                          <li><a href="#">창업 성공기</a></li>
+                          <li><a href="#">점포물건</a></li>
+                          <li><a href="#">상생해택</a></li>
+                      </ul>
+                  <li><a href="#">입점상담</a></li>
+                      <ul>
+                          <li><a href="#">입점 프로세스</a></li>
+                          <li><a href="#">기준 안내</a></li>
+                          <li><a href="#">입점 상담 신청</a></li>
+                          <li><a href="#">동반 성장</a></li>
+                      </ul>
+                  <li><a href="#">새로운소식</a></li>
+                      <ul>
+                          <li><a href="#">CU소식</a></li>
+                          <li><a href="#">이거어때</a></li>
+                      </ul>
+              </ul>
+          </nav>
 
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+          <div>
+              <div>
+                  <a href="#">로그인</a>
+                  <a href="#">회원가입</a>
+            </div>
 
-
-        header ul { display: flex; }
-
-
-        header h1 { margin-left: 50px; }
-        header ul li { margin: 0 20px; }
-        header ul li a { font-size: 20px; }
-
-
-
-        main { 
-            background: #0088ff; 
-            display: flex;
-            
-            padding: 50px;
-        }
-
-
-        section { 
-            width: 100vw;
-            height: 400px;
-            border: 1px solid #fff;
-        }
-
-
-        .s1 { margin-right: 50px; }
-
-
-        footer {
-            width: 100%; height: 150px; 
-            background: #00f7ff;
-        }
-
-        
-        @media screen and (max-width:800px) {
-            main { flex-flow: wrap; }
-            .s1 { margin-right: 0; margin-bottom: 50px; }
-        }
-
-
-    </style>
-</head>
-<body>
-    <header>
-        <h1>로고</h1>
-        <nav>
-            <ul>
-                <li><a href="#">메뉴1</a></li>
-                <li><a href="#">메뉴2</a></li>
-                <li><a href="#">메뉴3</a></li>
-                <li><a href="#">메뉴4</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="s1">
-            <h2>1</h2>
+              <nav>
+                  <ul>
+                      <li><a href="#">점주광장</a></li>
+                      <li><a href="#">점주인증</a></li>
+                      <li><a href="#">임직원인증</a></li>
+                  </ul>
+              </nav>
+              <a href="#">고객센터</a>
+            </div>
+          
         </section>
-        <section class="s1">
-            <h2>2</h2>
-        </section>
-        <section>
-            <h2>3</h2>
-        </section>
-    </main>
-    <footer>footer</footer>
-</body>
+
+<hr>
+<hr>
+        <!--헤더 아래부터-->
+        <main id="wrap">
+
+            <!--CU 스토리 보기-->
+            <section id="cu_story">
+                <h2><a href="#">CU 스토리 보기</a></h2>
+            </section>
+            <hr>
+
+            <!--CU 이벤트-->
+            <section id="ongoing_event">
+                <h2 class="hidden_title">새로운소식</h2>
+                <h3 class="hidden_title">CU소식</h3>
+                <div id="ongoing_wrap">
+                    <a>이전 이벤트보기</a>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <dl>
+                            <dt>100% 당첨 출석룰렛</dt>
+                            <dd>매일매일 최대3천원 쿠포 혜택 받으세요!</dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <dl>
+                            <dt>100% 당첨 출석룰렛</dt>
+                            <dd>매일매일 최대3천원 쿠포 혜택 받으세요!</dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <dl>
+                            <dt>100% 당첨 출석룰렛</dt>
+                            <dd>매일매일 최대3천원 쿠포 혜택 받으세요!</dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <dl>
+                            <dt>100% 당첨 출석룰렛</dt>
+                            <dd>매일매일 최대3천원 쿠포 혜택 받으세요!</dd>
+                          </dl>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <dl>
+                            <dt>100% 당첨 출석룰렛</dt>
+                            <dd>매일매일 최대3천원 쿠포 혜택 받으세요!</dd>
+                          </dl>
+                        </a>
+                      </li>
+                    </ul>
+                    <a>다음 이벤트보기</a>
+                </div>
+                <div class="pagination_button">
+                  <a href="#">1</a>
+                  <a href="#">1</a>
+                  <a href="#">1</a>
+                </div>
+            </section>
+            <hr>
+
+            <!--핫이슈-->
+            <section id="hotissue">
+                <h2 class="hidden_title">상품-서비스</h2>
+                <h3>핫이슈</h3>
+
+                <div id="hotissue_wrap">
+
+                    <div class="content_wrap">
+                        <div>swipe-left</div>
+                        <!--class로 변경-->
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img>
+                                    <dl>
+                                        <dt>하프)말차크림라떼250ml</dt>
+                                        <dd>2,500원</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img>
+                                    <dl>
+                                        <dt></dt>
+                                        <dd></dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img>
+                                    <dl>
+                                        <dt></dt>
+                                        <dd></dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img>
+                                    <dl>
+                                        <dt></dt>
+                                        <dd></dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img>
+                                    <dl>
+                                        <dt></dt>
+                                        <dd></dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img>
+                                    <dl>
+                                        <dt></dt>
+                                        <dd></dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                          <div>swipe-right</div>
+                    </div>
+
+
+                </div>
+                <div class="pagination_button">
+                    * * * * * *
+                </div>
+                <a href="#" class="view_all">핫이슈 상품 모두보기</a>
+            </section>
+            <hr>
+
+            <!--앱 설치 광고 배너-->
+            <section id="install">
+                <h2 class="hidden_title">앱 설치 광고</h2>
+                <div class="install_wrap">
+                    <div>
+                        <p>차별화된 서비스와 풍성한 혜택이 가득!</p>
+                        <p>포켓 CU APP 사용해보세요 :)</p>
+                    </div>
+                    <a href="#">포켓CU 설치</a>
+                </div>
+            </section>
+            <hr>
+
+            <!--증정상품 배너-->
+            <section id="plusgoods">
+                <h2 class="hidden_title">증정상품</h2>
+              
+                <div class="plusgoods_wrap">
+                    <div class="content_wrap">
+                        <div class="cont"><a href="#">엘라스틴 퍼퓸샴푸</a></div>
+                        <div class="cont"><a href="#">토탈7치약</a></div>
+                        <div class="cont"><a href="#">이지클리닉칫솔</a></div>
+                        <div class="cont"><a href="#">세탁세제1.4kg</a></div>
+                        <div class="cont"><a href="#">서울)스페셜컵라떼마일</a></div>
+                        <div class="cont"><a href="#">엘라스틴 퍼퓸샴푸</a></div>
+                        <div class="cont"><a href="#">토탈7치약</a></div>
+                        <div class="cont"><a href="#">이지클리닉칫솔</a></div>
+                        <div class="cont"><a href="#">세탁세제1.4kg</a></div>
+                        <div class="cont"><a href="#">서울)스페셜컵라떼마일</a></div>
+                        <div class="cont"><a href="#">엘라스틴 퍼퓸샴푸</a></div>
+                        <div class="cont"><a href="#">토탈7치약</a></div>
+                        <div class="cont"><a href="#">이지클리닉칫솔</a></div>
+                        <div class="cont"><a href="#">세탁세제1.4kg</a></div>
+                        <div class="cont"><a href="#">서울)스페셜컵라떼마일</a></div>
+                        <div class="cont"><a href="#">서울)스페셜컵라떼마일</a></div>
+                    </div>
+
+                    <div class="pagination_button">
+                        * * * * * *
+                    </div>
+
+                </div>
+                
+                <a href="#">증정상품 모두보기</a>
+            </section>
+            <hr>
+
+            <!--지금 나에게 필요한건?-->
+            <section id="nowneed">
+                <h2 class="hidden_title">상품*서비스</h2>
+                <div id="need_wrap">
+                    <div id="need_introduction">
+                        <h3><span class="hidden_title">전체상품</span>지금 나에게 필요한건?</h3>
+                        <p>CU의 다양한 상품들을 소개합니다!</p>
+                        <form>
+                            <input type="text" placeholder="연세우유 크림빵을 검색해보세요!">
+                            <i>search</i>
+                        </form>
+                    </div>
+                    <div id="need_keywords">
+                        <a href="#">간편식사</a>
+                        <a href="#">음료</a>
+                        <a href="#">즉석조리</a>
+                        <a href="#">아이스크림</a>
+                        <a href="#">생활용품</a>
+                        <a href="#">식품</a>
+                        <a href="#">스낵</a>
+                    </div>
+                </div>
+
+            </section>
+            <hr>
+
+            <!--창업안내 / 고객센터 배너-->
+            <section id="info">
+                <h2 class="hidden_title">창업*상생</h2>
+                <div id="info_wrap">
+                    <div class="info_box">
+                        <a href="#">
+                            <h3>창업안내</h3>
+                            <p>점주님들의 성공을 최우선으로 생각하는</p>
+                            <i>></i>
+                        </a>
+                    </div>
+                    <div class="info_box">
+                        <a href="#">
+                            <h3>고객센터</h3>
+                            <p>상품문의, 창업상담 무엇을 도와드릴까요?</p>
+                            <i>></i>
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+            <hr>
+
+            <!--우리동네 CU-->
+            <section id="ourtown">
+                <h2 class="hidden_title">매장안내</h2>
+                <div id="ourtown_wrap">
+                    <div id="ourtown_introduction">
+                        <h3>우리동네 CU 어디있지?</h3>
+                        <p>근처에 있는 CU를 찾아보세요!</p>
+                        <form>
+                            <input type="text" placeholder="점포명 또는 OO동을 입력해보세요.">
+                            <i>search</i>
+                        </form>
+                    </div>
+                </div>
+
+            </section>
+            <hr>
+
+            <!--스토리-->
+            <section id="cu_success">
+                <div id="cu_success_wrap">
+                    <h2>스토리</h2>
+                    <div id="cu_success_box">
+                        <div class="column">
+                            <a href="#">
+                                <!--사진은 a background-->
+                            </a>
+                            <h3><a href="#">성공스토리</a></h3><i>icon</i>
+                            <p>넓어진 공간만큼 고객의 발길을 사로잡다.<br>
+                            서초법원로점 박준형 점주님입니다.</p>
+                        </div>
+                        <div class="column">
+                            <a href="#">
+
+                            </a>
+                            <h3>BGF Live</h3><i>icon</i>
+                            <p>BGF Live에서.<br>
+                            CU 최신 소식을 알아보세요</p>
+                        </div>
+                        <div class="column">
+                            <a href="#">
+                            </a>
+                            <h3>Instagram</h3><i>icon</i>
+                            <p>리얼 짱구 만화를 찢고 나온 짱구 키리모찌 우동 등장!</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <hr>
+
+            <!--CU 매장 스크롤-->
+            <section id="scroll">
+                <h2 class="hidden_title">CU 매장 광고</h2>
+                <div class="scroll_wrap">
+                    <h3 class="hidden_title">고객과 사회에 좋은 친구 BGF리테일의 편의점 브랜드 CU입니다.</h3>
+                    <div>Image Slider</div>
+                    <div>Image Slider</div>
+                    <div>Image Slider</div>
+                    <div>Image Slider</div>
+                    <div class="pagination_button">
+                        * * * *
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <hr><hr>
+        <!--푸터 영역-->
+        <footer id="footer">
+            <section id="footer_section">
+                <h2 class="hidden_title">CU Footer</h2>
+                <div id="footer_info">
+                    <h3 class="hidden_title">CU Introduction Footer</h3>
+                    <div>
+                        <a href="#">Nice to CU Logo</a>
+                    </div>
+                    <div>
+                        BGF리테일 서울시 강남구 테헤란로 405(삼성동)
+                        COPYRIGHT © BGFretail ALL RIGHT RESERVED.
+                    </div>
+                    <div>
+                        TEL: 1577-8007
+                    </div>
+                    <div>
+                        SNSIcon
+                        <ul>
+                            <li><a href="#">facebook</a></li>
+                            <li><a href="#">twitter</a></li>
+                            <li><a href="#">blog</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div id="footer_quickmenu">
+                    <strong>Quick Menu</strong>
+                    <nav class="cu_quickmenu">
+                        <h3 class="hidden_title">Quick Menu Left</h3>
+                        <ul>
+                            <li><a href="#">입점상담</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                            <li><a href="#">발주 및 배송데이터</a></li>
+                            <li><a href="#">전자세금계산서</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="cu_quickmenu">
+                        <h3 class="hidden_title">Quick Menu Right</h3>
+                        <ul>
+                            <li><a href="#">점주인증</a></li>
+                            <li><a href="#">임직원인증</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div id="footer_familysite">
+                    <strong>Family Site</strong>
+                    <nav class="cu_familysite">
+                        <h3 class="hidden_title">Family Site Left</h3>
+                        <ul>
+                            <li><a href="#">BGF</a></li>
+                            <li><a href="#">BGF리테일</a></li>
+                            <li><a href="#">포켓CU</a></li>
+                            <li><a href="#">BGF네트웍스</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="cu_familysite">
+                        <h3 class="hidden_title">Family Site Right</h3>
+                        <ul>
+                            <li><a href="#">BGF휴먼넷</a></li>
+                            <li><a href="#">BGF로지스</a></li>
+                            <li><a href="#">BGF포스트</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </section>
+        </footer>
+
+
+    </body>
 </html>
